@@ -1,10 +1,11 @@
 import React from "react";
+import demo from'../images/katie-zaferes.png'
 export default function Card(){
 return(
     <div className="card">
-            <img src="../images/katie-zaferes.png" className="card--image" />
+            <img src={demo}/>
             <div className="card--stats">
-                <img src="../images/star.png" className="card--star" />
+                <img src="../images/star.png"/>
                 <span>5.0</span>
                 <span className="gray">(6) • </span>
                 <span className="gray">USA</span>
