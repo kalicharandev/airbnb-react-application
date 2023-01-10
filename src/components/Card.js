@@ -10,7 +10,7 @@ export default function Card(props){
 return(
     <div className="card">
        {BadgeStatus && <div className="card--badge">{BadgeStatus}</div>}
-            <img src={props.Img} className="card--image" />
+       <img src={`${process.env.PUBLIC_URL}  ${props.Img}`} className="card--image" />
             <div className="card--stats">
                 <img src= {props.Str}className="card--star" />
                 <span>{props.Rating}</span>
